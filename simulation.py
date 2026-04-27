@@ -1,0 +1,10 @@
+
+WIDTH = 1600
+HEIGHT = 880
+
+CAR_SIZE_X = 30
+CAR_SIZE_Y = 30
+
+BORDER_COLOR = (255, 255, 255, 255) 
+
+current_generation = 0 
