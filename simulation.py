@@ -47,3 +47,10 @@ class Car:
             position = radar[0]
             pygame.draw.line(screen, (0, 255, 0), self.center, position, 1)
             pygame.draw.circle(screen, (0, 255, 0), position, 5)
+            
+    def check_collision(self, game_map):
+        self.alive = True
+        for point in self.corners:
+            if game_map.get_at((int(point[0]), int(point[1]))) == BORDER_COLOR:
+                self.alive = False
+                break
