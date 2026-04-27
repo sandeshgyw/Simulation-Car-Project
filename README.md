@@ -20,5 +20,16 @@ Genomes and metrics are saved after training completes or
 when you return to the menu with Q.
 
 
+### Replay
+Loads the best saved genome  and runs it on the selected track. 
 
+### Manual
+Drive a car yourself using the arrow keys. 
 
+## Project Goals
+
+- Refactor the monolithic prototype into a clean, modular Python package
+- Separate concerns across domain, core, AI, UI, simulation, analytics, and persistence layers
+- Establish a comprehensive test suite (477 tests, all headless)
+- Support training, replay, and manual-drive modes via a shared `DriverInterface`
+- Provide photo mode and presentation tools for academic demos and reports
