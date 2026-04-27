@@ -99,3 +99,9 @@ class Car:
 
         for d in range(-90, 120, 45):
             self.check_radar(d, game_map)
+    
+    def get_data(self):
+        radars = self.radars
+        return_values = [0, 0, 0, 0, 0]
+        for i, radar in enumerate(radars):
+            return_values[i] = int(radar[1] / 30)
