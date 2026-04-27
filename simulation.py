@@ -38,3 +38,6 @@ class Car:
 
         self.distance = 0 
         self.time = 0 
+        
+    def draw(self, screen):
+        screen.blit(self.rotated_sprite, self.position)
