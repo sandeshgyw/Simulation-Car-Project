@@ -105,3 +105,7 @@ class Car:
         return_values = [0, 0, 0, 0, 0]
         for i, radar in enumerate(radars):
             return_values[i] = int(radar[1] / 30)
+        return return_values
+
+    def is_alive(self):
+        return self.alive
