@@ -109,3 +109,6 @@ class Car:
 
     def is_alive(self):
         return self.alive
+
+    def get_reward(self):
+        return self.distance / (CAR_SIZE_X / 2)
