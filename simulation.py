@@ -112,3 +112,11 @@ class Car:
 
     def get_reward(self):
         return self.distance / (CAR_SIZE_X / 2)
+
+    def rotate_center(self, image, angle):
+        rectangle = image.get_rect()
+        rotated_image = pygame.transform.rotate(image, angle)
+        rotated_rectangle = rectangle.copy()
+        rotated_rectangle.center = rotated_image.get_rect().center
+        rotated_image = rotated_image.subsurface(rotated_rectangle).copy()
+        return rotated_image
